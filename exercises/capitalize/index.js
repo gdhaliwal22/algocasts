@@ -17,3 +17,17 @@ function capitalize(str) {
 }
 
 module.exports = capitalize;
+
+// Solution #2
+// function capitalize(str) {
+//   let results = str[0].toUpperCase();
+
+//   for (let i = 1; i < str.length; i++) {
+//     if (str[i - 1] === " ") {
+//       results += str[i].toUpperCase();
+//     } else {
+//       results += str[i];
+//     }
+//   }
+//   return results;
+// }
