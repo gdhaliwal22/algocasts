@@ -10,8 +10,8 @@
 // `Array.from(str)` is ES6 syntax for creating array of string characters.
 
 function palindrome(str) {
-  return Array.from(str).every((char, i) => {
-    return char === str[str.length - i - 1];
+  return Array.from(str).every((char, index) => {
+    return char === str[str.length - index - 1];
   });
 }
 
@@ -22,7 +22,7 @@ module.exports = palindrome;
 //   return str.length > 0 && Array.from(str).reverse().join("") === str;
 // }
 
-// Solution #2
+// Solution #2 only if you need to remove spaces and puncations, will fail tests
 // function palindrome(str) {
 //   // remove non-alphanumeric characters and
 //   // change the string to lowercase
