@@ -20,3 +20,11 @@ function vowels(str) {
 }
 
 module.exports = vowels;
+
+// Solution #1
+
+// function vowels(str) {
+//   const matches = str.match(/[aeiou]/gi);
+
+//   return matches ? matches.length : 0;
+// }
