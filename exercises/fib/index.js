@@ -32,14 +32,14 @@ fib = memoize(fib);
 
 module.exports = fib;
 
-Solution #1 Recursive but has Exponential Runtime 2^n
-function fib(n) {
-    if (n < 2) {
-      return n;
-    }
-    return fib(n - 1) + fib(n - 2);
-  }
+// Solution #1 Recursive but has Exponential Runtime 2^n
+// function fib(n) {
+//     if (n < 2) {
+//       return n;
+//     }
+//     return fib(n - 1) + fib(n - 2);
+//   }
 
-Memoization - store the argumemts of each function call along with the result.
-If the function is called again with the same arguments, return the precomputed
-result, rather than running the function again
+// Memoization - store the argumemts of each function call along with the result.
+// If the function is called again with the same arguments, return the precomputed
+// result, rather than running the function again
